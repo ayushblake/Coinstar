@@ -11,7 +11,7 @@ function HistoryChart({ data, curr }) {
 
 
     const determineTimeFormat = () => {
-        console.log("called")
+        // console.log("called")
         switch (timeFormat) {
             case "24h": {
                 return day;
@@ -36,8 +36,8 @@ function HistoryChart({ data, curr }) {
     useEffect(() => {
         // console.log(chartRef.current)
         // var chartInstance;
-        console.log(day)
-        console.log(historyOptions)
+        // console.log(day)
+        // console.log(historyOptions)
         if (chartRef && chartRef.current && detail) {
             Chart.register(...registerables);
             var chartInstance = new Chart(chartRef.current, {
@@ -65,7 +65,7 @@ function HistoryChart({ data, curr }) {
     })
 
     useEffect(() => {
-        console.log(timeFormat)
+        // console.log(timeFormat)
     })
     const renderPrice = () => {
         if (detail) {

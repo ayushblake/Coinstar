@@ -17,7 +17,7 @@ function CurrencyPicker() {
             <label class="input-group-text" >Currency</label>
             <select class="form-select" onChange={(event) => changeCurrency(event.target.value)} >
                 {currencyList.map(curr => {
-                    console.log(currency + curr)
+                    // console.log(currency + curr)
                     if (curr === currency)
                         return <option selected value={curr}>{curr}</option>
                     return <option value={curr}>{curr}</option>
